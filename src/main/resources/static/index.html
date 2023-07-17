@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat-App</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <div class="name-form" id="name-form">
+        <div class="mb-3">
+            <label for="name" class="form-label">Enter your name</label>
+            <input type="text" class="form-control" id="name" placeholder="enter your name">
+        </div>
+        <button type="button" class="btn btn-primary" id="login">Enter</button>
+    </div>
+
+    <div id="chat-room" class="d-none">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="message-container-table">
+                                    <div class="name-form" id="send-message">
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Enter your message</label>
+                                            <input type="text" class="form-control" id="message" placeholder="enter your message">
+                                        </div>
+                                        <button type="button" class="btn btn-primary" id="send">Send</button>
+                                        <button type="button" class="btn btn-primary" id="logOut">Log Out</button>
+                                    </div>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
